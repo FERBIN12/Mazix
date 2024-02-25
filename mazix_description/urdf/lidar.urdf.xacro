@@ -4,7 +4,7 @@
     <joint name="laser_joint" type="fixed">
         <parent link="chassis"/>
         <child link="laser_frame"/>
-        <origin xyz="0.37 0 0.22" rpy="0 0 0"/>
+        <origin xyz="0.37 0 0.22" rpy="0 0 -${pi/2}"/>
     
     </joint>
 
@@ -32,18 +32,19 @@
         <sensor name="laser" type="ray">
             <pose> 0 0 0 0 0 0 </pose>
             <visualize>true</visualize>
-            <update_rate>10</update_rate>
+            <update_rate>15.0</update_rate>
             <ray>
                 <scan>
                     <horizontal>
                         <samples>360</samples>
-                        <min_angle>-3.14</min_angle>
-                        <max_angle>3.14</max_angle>
+                        <resolution>1</resolution>   <!-- degrees per point -->
+                        <min_angle>0.0</min_angle>
+                        <max_angle>3.14/2</max_angle>
                     </horizontal>
                 </scan>
                 <range>
-                    <min>0.3</min>
-                    <max>12</max>
+                    <min>0.1</min>
+                    <max>1</max>
                 </range>
             </ray>
             <plugin name="laser_controller" 
