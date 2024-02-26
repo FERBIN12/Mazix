@@ -20,6 +20,7 @@ In terminal 1:
                         
     ros2 launch mazix_description launch_sim.launch.py 
 In terminal 2:
-                        ros2 run mazix_description qr_auto_node
+
+    ros2 run mazix_description qr_auto_node.py
 
 
