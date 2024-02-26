@@ -44,7 +44,7 @@
                 </scan>
                 <range>
                     <min>0.1</min>
-                    <max>1</max>
+                    <max>2</max>
                 </range>
             </ray>
             <plugin name="laser_controller" 

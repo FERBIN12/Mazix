@@ -27,7 +27,7 @@ class lidar_cam_sub(Node):
         if(front_ray <= 0.9):
             self.qr_detector()
         else:
-            print(front_ray)
+            print('move_forward')
 
     def qr_detector(self):
         decoder = cv2.QRCodeDetector()

@@ -25,7 +25,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'camera_lidar_node = mazix_description.qr_maze:main'
+            'camera_lidar_node = mazix_description.qr_maze:main',
+            'qr_auto_node = mazix_description.qr_auto:main',
+            'move_robot_node = mazix_description.test_for:main',
         ],
     },
 )
