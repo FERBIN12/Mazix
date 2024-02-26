@@ -2,11 +2,11 @@
 
 OS AND SOFTWARE USED:
 
-1.) UBUNTU 22.04
+UBUNTU 22.04
 
-2.)ROS2 -HUMBLE
+ROS2 -HUMBLE
 
-3.)OPENCV
+OPENCV
             
 Packages needed:
         
